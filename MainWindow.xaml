@@ -8,5 +8,16 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
 
+        <StackPanel>
+            <Menu>
+                <MenuItem Header="Registros">
+                    <MenuItem Header="" x:Name="" Click="RegistroMenuItem_Click"/>
+
+                    <MenuItem Header="Consultas" >
+                    <MenuItem Header="" x:Name="" Click ="ConsultaMenuItem_Click" />  
+                </MenuItem>
+            </Menu>
+        </StackPanel>
     </Grid>
 </Window>
+c

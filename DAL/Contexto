@@ -1,6 +1,4 @@
 using Microsoft.EntityFrameworkCore;
-using Jose_vargas_Apl1_p1.Entidade
-s;
 
 public class Contexto:DbContext
 {
