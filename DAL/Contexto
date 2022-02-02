@@ -1,0 +1,12 @@
+using Microsoft.EntityFrameworkCore;
+using Jose_vargas_Apl1_p1.Entidades;
+
+public class Contexto:DbContext
+{
+    //public DbSet<Nombre entidad> nombre {get; set;}
+
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    {
+        optionsBuilder.UseSqlite(@"Data Source=DATA\DATA.db");
+    }
+}
