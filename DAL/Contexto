@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
-using Jose_vargas_Apl1_p1.Entidades;
+using Jose_vargas_Apl1_p1.Entidade
+s;
 
 public class Contexto:DbContext
 {
@@ -7,6 +8,6 @@ public class Contexto:DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlite(@"Data Source=DATA\DATA.db");
+        optionsBuilder.UseSqlite();
     }
 }
