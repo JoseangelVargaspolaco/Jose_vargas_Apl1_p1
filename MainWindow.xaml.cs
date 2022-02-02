@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Jose_vargas_Apl1_p1.UI.Consultas;
+using Jose_vargas_Apl1_p1.UI.Registros;
 
 namespace Jose_vargas_Apl1_p1
 {
@@ -22,7 +24,21 @@ namespace Jose_vargas_Apl1_p1
     {
         public MainWindow()
         {
-            InitializeComponent();
+           InitializeComponent(); 
         }
+
+        private void RegistroMenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            var rRegistro = new rRegistro();
+            rRegistro.Show();
+        }
+
+
+        private void ConsultaMenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            var cConsulta = new cConsulta();
+            cConsulta.Show();
+        }
+
     }
 }
