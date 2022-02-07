@@ -15,5 +15,9 @@ namespace Jose_vargas_Apl1_p1.Entidades
 
         public float ValorInventario {get; set;}
 
+        public Productos()
+        {
+
+        }
     }
 }
