@@ -5,6 +5,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using Microsoft.EntityFrameworkCore;
 using Jose_vargas_Apl1_p1.DAL;
+using Jose_vargas_Apl1_p1.Entidades;
 
 namespace Jose_vargas_Apl1_p1.BLL
 {
@@ -53,7 +54,7 @@ namespace Jose_vargas_Apl1_p1.BLL
             return paso;
         }
 
-        public static bool Editar(Productos productos)
+        public static bool Modificar(Productos productos)
         {
             Contexto contexto = new Contexto();
             bool paso = false;
@@ -79,7 +80,7 @@ namespace Jose_vargas_Apl1_p1.BLL
             if(!Existe(productos.Productoid))
                 return Insertar(productos);
             else
-                return Editar(productos);
+                return Modificar(productos);
         }
 
         

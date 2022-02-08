@@ -15,6 +15,8 @@ using System.Windows.Shapes;
 using Jose_vargas_Apl1_p1.UI.Consultas;
 using Jose_vargas_Apl1_p1.UI.Registros;
 
+using Jose_vargas_Apl1_p1.UI.Registros;
+
 namespace Jose_vargas_Apl1_p1
 {
     /// <summary>

@@ -1,6 +1,8 @@
 using System.Windows;
 using System.Linq;
 using System.Collections.Generic;
+using Jose_vargas_Apl1_p1.BLL;
+using Jose_vargas_Apl1_p1.Entidades;
 
 namespace Jose_vargas_Apl1_p1.UI.Consultas
 {
@@ -14,6 +16,7 @@ namespace Jose_vargas_Apl1_p1.UI.Consultas
 
         private void BuscarButton_Click(object sender, RoutedEventArgs e)
         {
+            
             
         }
     }

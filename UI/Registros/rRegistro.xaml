@@ -5,30 +5,50 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Jose_vargas_Apl1_p1.UI.Registros"
         mc:Ignorable="d"
-        Title="Registro" Height="300" Width="300">
+        Title="Registro" Height="500" Width="500">
     <Grid>
 
         <StackPanel Orientation="Vertical" Margin="10"> 
            
-           <!-- LibroId -->
             <StackPanel Orientation="Vertical">
-                <Label Content="Id:"/>
 
+                <!-- ProdctosId -->
+                <Label Content="Produtcos-ID"/>
                 <StackPanel Orientation="Horizontal">
-                    <TextBox Text="{Binding LibroId}" Width="100" />
-                    <Button Content="🔎 Buscar" Click="BuscarButton_Click" /> 
+                    <TextBox x:Name="ProductosidTextBox" Text="{Binding LibroId}" Width="100"/>
                 </StackPanel>
+
+                <!-- Descripcion -->
+                <Label Content="Descripcion"/>
+                <StackPanel Orientation="Horizontal">
+                    <TextBox x:Name="descripcionTextBox" Text="{Binding LibroId}" Width="100"/>
+                </StackPanel>
+
+                <!-- Costo -->
+                <Label Content="Costo"/>
+                <StackPanel Orientation="Horizontal">
+                    <TextBox x:Name="costoTextBox" Text="{Binding LibroId}" Width="100"/>
+                </StackPanel>
+
+                <!-- Existencia -->
+                <Label Content="Existencia"/>
+                <StackPanel Orientation="Horizontal">
+                    <TextBox x:Name="ExistenciaTextBox" Text="{Binding LibroId}" Width="100"/>
+                </StackPanel>
+
+                <!-- ValorInventario -->
+                <Label Content="Valorinventario"/>
+                <StackPanel Orientation="Horizontal">
+                    <TextBox x:Name="valorinventarioTextBox" Text="{Binding LibroId}" Width="100"/>
+                </StackPanel>
+
             </StackPanel>
 
             <!-- BARRA DE BOTONES -->
-            <StackPanel 
-                        Margin="0,16,0,0"                      
-                        Orientation="Horizontal" 
-                        HorizontalAlignment="Center" >
-                
-                <Button Content="🆕 Nuevo" Click="NuevoButton_Click"/>
-                <Button Content="✔ Guardar" Click="GuardarButton_Click" />
-                <Button Content="⛔ Eliminar" Click="EliminarButton_Click"/>
+            <StackPanel Margin="0,20,0,0" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Content="💾Guardar" Click="GuardarButton_Click"/>
+                <Button Content="📝Editar" Click="EditarButton_Click"/>
+                <Button Content="⛔Eliminar" Click="EliminarButton_Click"/>
             </StackPanel>
 
         </StackPanel>

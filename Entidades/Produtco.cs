@@ -15,9 +15,13 @@ namespace Jose_vargas_Apl1_p1.Entidades
 
         public float ValorInventario {get; set;}
 
-        public Productos()
+        public Productos(int productosid, string? descripcion, string? existencia, int costo, float valorinventario)
         {
-
+            this.Productoid = productosid;
+            this.Descripcion = descripcion;
+            this.Existencia = existencia;
+            this.Costo = costo;
+            this.ValorInventario = valorinventario;
         }
     }
 }
